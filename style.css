@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif ;
+
+}
+
+a{
+    text-decoration: none;
+    
+    
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.navbar-text-color{
+    color: #666666 !important;
+    padding: 0px 10px !important;
+    border-right: 2px solid #707C24;
+
+}
+.main-logo{
+margin: 0px 0px 0px 100px; 
+    width: auto;
+    height: 80px;
+}
+
+.navbar-ul li{
+color: #666666 !important;
+
+
+}
+
+.navbar-ul {
+    position: absolute;
+    right: 80px;
+    bottom: 8px;
+}
+
+/* Carousel */
+
+#carouselExampleControls{
+    margin-top: 106px;
+}
+/* Carousel ends*/
+
+
+.carousel-arrow-left{
+    position: absolute;
+    left: 60px;
+    height: 15%;
+}
+
+.carousel-arrow-right{
+    position: absolute;
+    right: 60px;
+    height: 15%;
+}
+
+.carousel-navbar{
+    background-color: #515742;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-navbar h1{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 0;
+    border-right: 2px solid #98AA28;
+    padding: 15px;
+}
+
+/* Carousel Navbar dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 2px;
+    background-color: #515742;
+    /* min-width: 160px; */
+
+    padding: 4px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .dropdown-content a{
+    color: #FFFFFF;
+    
+  }
+  
+/* Carousel Navbar dropdown ends */
+
+.download-icon{
+    height: 27px;
+    margin: 0px 5px;
+}
+.download-icon-right{
+    height: 27px;
+    margin: 0px 5px;
+}
+
+.survey-register{
+    font-size: 16px ;
+    color: #AABF22;
+    border: 1px solid #AABF22;
+    border-radius: 12px;
+    padding: 2px 8px;
+    margin: 0px 5px;
+}
+
+.president-message{
+    display: flex;
+    
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.color-bg{
+    width: 100%;
+    background-color: #D6D5CE;
+
+}
+
+.president-message-content{
+    padding: 40px 30px;
+}
+
+.president-img{
+    width:215px;
+    height: 328px;  
+} 
+
+.president-heading{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.dear-machine{
+    font-size: 17px;
+}
+
+
+.president-message-p{
+    width: 99%;
+}
+
+
+.sole-voice{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.sole-voice-h1-1{
+   text-align: center;
+   color: #314D1D;
+   margin-bottom: 20px;
+}
+.sole-voice-h1-2{
+    font-size: 30px;
+   text-align: center;
+   margin-bottom: 50px;
+ 
+}
+
+.president-read-more{
+    color: #707C24;
+    border: 1px solid #707C24;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 14px;
+}
+
+.btn-readmore{
+    background: url(./resources/read_more.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 175px;
+    height: 48px;
+}
+
+.tool-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(262.5px,1fr));
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-gap:30px
+}
+
+
+.tool-1-img{
+   width: 250px; 
+}
+.tool-2-img{
+   width: 250px; 
+}
+.tool-3-img{
+   width: 250px; 
+}
+.tool-4-img{
+   width: 250px; 
+}
+
+.tool-1-p,
+.tool-2-p,
+.tool-3-p,
+.tool-4-p{
+    margin: 16px 0;
+    line-height: 125%;
+} 
+.tool-1 a,
+.tool-2 a,
+.tool-3 a,
+.tool-4 a {
+    color: rgba(0, 0, 0, 0.9);
+} 
+
+.about-div{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding:50px 0px;
+    margin-top: 30px;
+}
+
+.about-div h1{
+    margin-bottom: 20px;
+    color: #707C24;
+}
+.about-div p{
+   width: 99%;
+}
+
+/* .address-bar{
+    background-color:  #515742;
+    padding: 20px 30px;
+    color: rgba(255, 255, 255, 0.9);
+} */
+
+
+.navbar-bottom {
+    width: 100%;
+    background-color:  #515742;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-bottom p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nabar-bottom-icons {
+    position: absolute;
+    right: 50px;
+}
+
+.logo-facebook {
+    font-size: 2.2rem;
+    margin: 8px 10px 0px;
+}
+.logo-twitter {
+    font-size: 2.2rem;
+    margin: 8px 10px 0px;
+}
+.logo-linkedin {
+    font-size: 2.2rem;
+    margin: 8px 10px 0px;
+}
+.nabar-bottom-icons a {
+    color: rgba(255, 255, 255, 1) !important;
+
+    /* color: rgba(170, 191, 34, 1) !important; */
+}
+.nabar-bottom-icons a:hover {
+    /* color: rgba(255, 255, 255, 1) !important; */
+    color: rgba(170, 191, 34, 1) !important;
+}
+
+
+/* Media query */
+@media only screen and (min-width: 250px) and (max-width: 950px) {
+    
+   
+    .navbar-bottom {
+       width: 100%;
+   
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap-reverse;
+   }
+    .nabar-bottom-icons {
+       position: static;
+       right: auto;
+   }
+   
+ 
+   
+   }
+/* Media query ends*/
+
