@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 110%;
+        }
+
+        .main-content {
+            width: 100%;
+            margin-top: 106px;
+        }
+
+        .main-content-block {
+            width: 100%;
+            display: flex;
+            background: #d7d9d5;
+        }
+
+        .border {
+            width: 100%;
+            background-image: url("../resources/ictma_bar.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .heading {
+            color: #fff;
+            font-size: 25px !important;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 115px;
+            text-transform: uppercase;
+        }
+
+        .article-h1 {
+            font-size: 20px !important;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .article {
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+
+        .main-parent {
+            width: 1140px;
+            background-color: #e6e8e3;
+        }
+
+        .main-child {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .p-title {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .main-content h1 {
+            font-size: 18px;
+        }
+
+        .main-content p {
+            font-size: 14px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .patron {
+            list-style: lower-alpha;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+
+        }
+
+        .category-img {
+            width: 100%;
+        }
+
+        .fees {
+            margin-top: 20px;
+        }
+
+        .classification {
+            margin-top: 20px;
+        }
+
+        .note {
+            margin-top: 20px;
+        }
+
+        .explanatory {
+            font-style: italic;
+        }
+
+        .gray-bottom {
+            background-color: #d1d1c1;
+        }
+
+        .btn-top {
+            position: fixed;
+            bottom: 10%;
+            color: #707c24;
+            right: 30px;
+            font-size: 16px;
+        }
+
+        .btn-top:hover {
+            text-decoration: none;
+            color: #666666;
+            outline: none;
+            border: none;
+        }
+
+        .navbar-ul {
+            font-size: 16px;
+        }
+
+        /* media query */
+        @media only screen and (min-width: 1367px) and (max-width: 1600px) {
+            .main-child {
+                width: 75%;
+            }
+        }
+
+        @media only screen and (min-width: 1281px) and (max-width: 1366px) {
+            .main-child {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+            .main-child {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) and (max-width: 1024px) {
+            .main-child {
+                width: 78%;
+            }
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 992px) {
+            .btn-top {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 fixed-top">
+        <a class="navbar-brand" href="../index.html"><img class="main-logo" src="../resources/ictma_logo.png"
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto  mt-lg-0  navbar-ul">
+                <li class="nav-item active">
+                    <a class="nav-link navbar-text-color" href="../index.html">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link navbar-text-color" href="#about">About</a>
+                    </li> -->
+
+                <li class="nav-item">
+                    <div class="dropdown navbar-text-color">
+                        <a class="dropbtn ">About</a>
+                        <div class="dropdown-content">
+                            <a href="./our_mission.html">Our Mission</a>
+                            <a href="./president_message.html">President's Message</a>
+                            <a href="./members.html">Members</a>
+                            <a href="./office_bearers.html">Office Bearers</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color" href="#">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color" href="./memorandum.html">Memorandum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color" href="./class.html">Classifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color" href="./memberships.html">Memberships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color " href="./survey.html">Survey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color border-0" href="./contact_us.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="border">
+            <h1 class="heading">Articles Of Association</h1>
+        </div>
+        <div class="main-content-block">
+            <div class="main-parent">
+                <div class="main-child">
+                    <p class="p-title">(Incorporated Sec 8 of the Companies Act 2013)
+                        Company Limited by Guarantee not having Share Capital</p>
+                    <h1 class="article-h1 article">ARTICLES OF ASSOCIATION</h1>
+                    <h1 class="article-h1">OF</h1>
+                    <h1 class="article-h1">INDIAN CUTTING TOOL MANUFACTURERS ASSOCIATION</h1>
+                    <h1 class="interpretation">1. Interpretation</h1>
+                    <p>In these Articles the following words or expressions shall have the following meanings unless
+                        repugnant to the subject or content:</p>
+                    <p>a) "The Act" means the Companies' Act sec8, 2013 as amended from time to time.</p>
+                    <p>b) "Articles" means Articles of Association and the Regulations of the Association for the time
+                        being in force.</p>
+                    <p>c) "The Association" means "Indian Cutting Tool Manufacturers' Association"</p>
+                    <p>d) "Cutting Tools" shall mean any tool used for metal cutting or machining, made out of tungsten
+                        carbide, ceramic, Cubic Boron Nitride (CBN) Poly Crystalline Diamond (PCD), or any other
+                        material.</p>
+                    <p>e) "The Executive Committee" means the Executive Committee of the Association for the time being.
+                    </p>
+                    <p>
+                        f) "The Members" means a member for the time being of the Association whose name shall have been
+                        duly entered in the Register of Members and who, has not ceased to be a member by virtue of any
+                        of the provisions
+                        of the Act or these-Articles and shall include a Subscriber to the Memorandum and Articles of
+                        Association.
+                    </p>
+                    <p>g) "Month" means English Calendar Month.</p>
+                    <p>h) The Office" means the Registered Office for the time being of the Association.</p>
+                    <p>i) "Organisation" means any Association, Chamber or other body or society interested in trade,
+                        commerce or industry in India.</p>
+                    <p>j) "President and Vice-President" means Chairman and Vice-Chairman under the Act.</p>
+                    <p>k) "The Register of Members" means the Register of Members to be kept pursuant to the Act.</p>
+                    <p>l) "Registered Representative" means the individual registered as the representative of a Member
+                        of the Association</p>
+                    <p>m) "The Secretary" means the Secretary for the time being of the Association or the Deputy
+                        Secretary or the Assistant Secretary acting for him.</p>
+                    <p>n) Words importing person or persons shall include individuals, firms, corporations joint Hindu
+                        families or other association.</p>
+                    <p>o) Words importing singular number shall include the plural number and vice versa. Words
+                        expressed in masculine gender shall also include the feminine and neuter gender.</p>
+                    <h1>2. Membership</h1>
+                    <p>
+                        2.1 The number of members with which the Association proposes to be registered is limited to
+                        100, but the Executive Committee may, from time to time in order to further the interests of the
+                        Association, increase
+                        the number of members appropriately.
+                    </p>
+                    <p>2.2 Members of the Association shall be designated (in order of seniority) as follows:</p>
+                    <ol class="patron">
+                        <li>Patron Members</li>
+                        <li>Ordinary Members</li>
+                        <li>Associate Members</li>
+                        <li>Honorary Members</li>
+                    </ol>
+                    <p>2.3 Qualification criteria for Patron, Ordinary and Associate Members and certain aspects
+                        relating thereto, are set out as under :</p>
+                    <img src="../resources/ICTMA- Article 1.jpg" class="category-img" />
+                    <h1 class="fees">1. FEES</h1>
+                    <img src="../resources/ICTMA- Article 2.jpg" class="category-img" />
+                    <p class="classification">2. CLASSIFICATION OF INDUSTRIES FOR THE PURPOSE OF MEMBERSHIP</p>
+                    <img src="../resources/ICTMA- Article 3.jpg" class="category-img" />
+                    <h1 class="note">NOTE</h1>
+                    <p>a) Annual production value will be considered for the financial year ended on 31st March, as per
+                        the latest available audited annual accounts, which shall be less than 12 months old.</p>
+                    <p>
+                        b) In case accounts are not publically available, the production value may be certified by a
+                        chartered accountant, preferably the statutory auditor of the entity. The value of production to
+                        be considered should
+                        exclude all taxes and levies.
+                    </p>
+                    <p>c) In case of doubt regarding classification, the decision of the Executive Committee is final
+                    </p>
+                    <p>2.4 A member may chose to take up a lower category of membership than warranted by qualification
+                        criteria, but may not take up a higher category of membership than warranted by qualification
+                        criteria.</p>
+                    <p class="explanatory">Explanatory note</p>
+                    <p>a. An applicant qualifying for Patron membership may chose to take up Ordinary or Associate
+                        membership.</p>
+                    <p>b. An applicant qualifying for Ordinary membership may chose to take up Associate membership but
+                        cannot take up Patron membership.</p>
+                    <p>c. An applicant qualifying for Associate membership cannot take up Patron or Ordinary membership
+                    </p>
+                    <p>
+                        2.5 An existing member (subject to fulfillment of qualification criteria), desiring to take up a
+                        membership category higher than currently held, shall be liable pay the differential entrance
+                        fee existing on date
+                        the such change in category is approved.
+                    </p>
+                    <p>
+                        2.6 In case of any change in circumstances whereby a member no longer fulfills the qualification
+                        criteria for a higher category of membership, such member shall be re-designated to such lower
+                        category as it
+                        qualifies for or chooses. In such cases, entrance or any other fees already paid shall not be
+                        refunded. However, if such member regains the previous qualification criteria within 2 years,
+                        and desires to be
+                        re-categorised accordingly, the differential fees for change in membership category shall not be
+                        payable by such member. The decision of the Executive Committee on any such question under this
+                        sub-clause shall be
+                        final and binding.
+                    </p>
+                    <h1>3. Eligibility for Membership</h1>
+                    <p>
+                        3.1 Any person, firm, association, body corporate, incorporated or registered under any law or
+                        regulation for the time being in force, engaged in manufacturing, repairing or assembling
+                        Cutting Tools or carrying
+                        out any trade or business related or associated with Cutting Tools and/or any parts, assemblies
+                        or sub-assemblies and accessories thereof, or dealing in the same shall be eligible to become a
+                        Member provided
+                        that, such person, firm, association or body corporate is either domiciled or has a place of
+                        business in India., subject to fulfilling the qualification criteria set out in Annexure 1.
+                    </p>
+                    <p>
+                        3.2 The Executive Committee shall decide any question which may arise as to the eligibility or
+                        otherwise of an applicant for admission as a member of the Association and its decision, shall
+                        be final and
+                        conclusive and it shall not be bound to assign any reason for its decision on any matter or
+                        question relating to the eligibility of any applicant, or admission or non-admission of any
+                        applicant to membership of
+                        the Association.
+                    </p>
+                    <p>
+                        3.3 If the business of any member (transferor) is acquired by any other eligible entity
+                        (transferee) as a going concern with all assets, liabilities, goodwill and name of the business
+                        of the said transferring
+                        member as a going concern, the Executive Committee may allow such transferee to continue as a
+                        member in place of such transferor. The Executive Committee shall be the sole judge in this
+                        behalf and shall not be
+                        bound to assign any reason for its decision.
+                    </p>
+                    <h1>4. Admission to Membership</h1>
+                    <p>
+                        4.1 All applications for admission as a Member of Association, whether as a Patron, Ordinary or
+                        an Associate Member, shall be in the prescribed application form. Such form shall, inter alia,
+                        contain an
+                        undertaking by the applicant to accept and abide by the Memorandum and Articles of Association
+                        and any other rules and regulations of the Association, on admission to membership thereof.
+                    </p>
+                    <p>
+                        4.2 The application form for membership may be proposed by one and seconded by another existing
+                        member. An application for membership may also be made directly to the Association in the
+                        prescribed application
+                        form (without a proposer or seconder) by any eligible person.
+                    </p>
+                    <p>
+                        4.3 All applications received shall be circulated among the Members of the Executive Committee.
+                        The application shall be placed before the meeting of the Executive Committee and if the same is
+                        approved by a
+                        majority decision, the applicant shall be declared duly admitted to the membership of the class
+                        mentioned in the application.
+                    </p>
+                    <p>4.4 Honorary membership:</p>
+                    <ul>
+                        <li>A proposal for an honorary membership should be in the prescribed form and should be
+                            supported by at least 3 members.</li>
+                        <li>
+                            The Executive Committee may, if it thinks fit, confer Honorary Membership of the Association
+                            to officials or any other persons connected with the trade, commerce or industry -
+                            particularly with Cutting Tool
+                            industry in India - such as engineers, technicians or other persons who have rendered
+                            distinguished service to the interests promoted by the Association or to any other person
+                            whose advice or experience is
+                            considered useful to the Association.
+                        </li>
+                    </ul>
+                    <h1>5. Fees for Membership</h1>
+                    <p>5.1 The entrance and annual fees of the respective classes of membership are set out in Article
+                        2.3.</p>
+                    <p>5.2 Annual subscription shall fall due for each official year of the Association commencing from
+                        the 1st day of April of each year, and shall be payable on or before the 30th day of April each
+                        year.</p>
+                    <p>5.3 For any member joining the Association during the year, the following provisions shall apply:
+                    </p>
+                    <p>5.3.1 Entrance and Annual fees shall be due and payable immediately on joining.</p>
+                    <p>
+                        5.3.2 If the unexpired portion of the official year of the Association at the date of the
+                        admission of the new member is more than six months, then the fee payable by such new member
+                        shall be the full annual fee.
+                    </p>
+                    <p>
+                        5.3.3 If the unexpired portion of the official year of the Association at the date of the
+                        admission of the new member is less than six months, then the fee payable by such new member
+                        shall be 60% of the annual
+                        fee.
+                    </p>
+                    <p>5.4 Subscriptions in arrear shall be treated as a debt to and recoverable by the Association.</p>
+                    <p>5.5 The entrance fee and annual fee will be subject to revision provided the change in the rates
+                        is approved by the Executive Committee and the General Body of members of the Association.</p>
+                    <h1>6. Rights of Members</h1>
+                    <p>
+                        6.1 All members of the Association shall be entitled to such privileges as may be determined by
+                        the Executive Committee from time to time subject to the approval of the General Body of members
+                        of the Association.
+                        Except for the specific rights and privileges provided in Articles 6.2 to 6.7 below, Article 9.2
+                        and Article 10, all other rights and privileges attaching to all classes of membership shall be
+                        same as between the
+                        classes in all other matters.
+                    </p>
+                    <p>
+                        6.2 All members shall nominate individuals as their representatives to the Association. Such
+                        individuals may be shareholders, owners, partners, senior employees or other persons authorized
+                        by the management of
+                        the member.
+                    </p>
+                    <p>
+                        6.3 For each such person so nominated (hereinafter referred as Principal Representative), the
+                        member may appoint an Alternate Representative. The Principal Representative shall act on behalf
+                        of the member and
+                        exercise the rights of the member with regard to the Association.
+                    </p>
+                    <p>
+                        6.4 Patron Members shall have the right to vote at all meetings of the Association whether
+                        Annual General or Extraordinary General Meetings. The voting power of a Patron member shall be
+                        the equivalent of three
+                        votes of an Ordinary Member. Patron Members shall also have the right to nominate from amongst
+                        themselves members to the reserved seats on the Executive Committee every year, in addition to
+                        their right to stand
+                        for election for the unreserved seats of the Executive Committee.
+                    </p>
+                    <p>
+                        6.5 Ordinary Members shall have the right to vote at all meetings of the Association whether
+                        Annual General or Extraordinary General Meetings. They shall not have the right to nominate from
+                        amongst themselves any
+                        member to the reserved seats on the Executive Committee. However any of them shall be entitled
+                        to stand for election for the unreserved or open seats on the Executive Committee.
+                    </p>
+                    <p>
+                        6.6 Associate Members shall be entitled to take part in the proceedings of the Annual General
+                        and Extraordinary General Meetings of the Association but they shall not have right to vote at
+                        such meetings nor have
+                        any right to be elected on the Executive Committee of the Association.
+                    </p>
+                    <p>
+                        6.7 A member is in arrears of annual fees shall not have the right to nominate or second
+                        candidates for election to the Executive Committee, or to be nominated as a candidate for
+                        election to the Executive
+                        Committee or to attend or vote at any Meeting of the General Body, Annual or Extraordinary.
+                    </p>
+                    <h1>7. Termination of Membership</h1>
+                    <p>
+                        7.1 Expulsion: If it shall appear to the Executive committee that any member has failed to
+                        observe the provisions of these Articles, then, by a majority decision of the Executive
+                        Committee, it shall be competent
+                        for the Association to request such member to resign; and if the members fails or refuses to do
+                        so, the Executive Committee shall thereupon convene a General Body Meeting and if at such a
+                        meeting the two-thirds
+                        majority of the members present and entitled to voting, vote for the expulsion of the member so
+                        offending, such member shall thereupon cease to be a member. Such power of expulsion may also be
+                        exercised in
+                        addition to and concurrent with any remedy by the terms and conditions which may be exercisable
+                        in such cases.
+                    </p>
+                    <p>
+                        7.2 Withdrawal: A member may withdraw from the Association by giving two months' notice in
+                        writing to the Secretary of the Association of his intention to do so, and upon the expiry of
+                        the notice period such
+                        member shall cease to be a member of the Association. Such member shall before giving such
+                        notice shall pay to the Association the annual subscription and any other dues payable to the
+                        Association.
+                    </p>
+                    <p>7.3 Cessation:</p>
+                    <p>7.3.1 A member shall cease to be a member of the Association if</p>
+                    <p>
+                        (1) A member as an individual, is an undischarged insolvent or shall make a composition or
+                        scheme of arrangement under the insolvency Act or he is adjudged by a competent court to be of
+                        unsound mind or he is
+                        convicted of an offence involving moral turpitude;
+                    </p>
+                    <p>
+                        (2) A member is a firm, it is dissolved or adjudged insolvent or shall make a composition or
+                        scheme of arrangement under the Insolvency Act or the partners as such are convicted of an
+                        offence involving moral
+                        turpitude;
+                    </p>
+                    <p>(3) A member is a Company, an effective resolution is passed or an order made by a competent
+                        court for winding up the Company or corporation;</p>
+                    <p>
+                        (4) Such member being an individual he, or if such member is a firm, Company or Corporation, its
+                        nominee, as the case may be, is pronounced guilty of an offence which, in the opinion of the
+                        Executive Committee,
+                        amounts to an act or conduct or omission in contravention of any of the Articles of Association
+                        or otherwise detrimental to the interest of the Association;
+                    </p>
+                    <p>
+                        (5) Such member fails to pay annual subscription within 3 months from the date of the same
+                        becoming due and if the same is not paid within one month after the receipt of a written notice
+                        requesting a member to
+                        make payment of the same;
+                    </p>
+                    <p>(6) Such member is in arrears of subscription as on the end of the accounting year (March 31) -
+                        automatic cessation.</p>
+                    <p>(7) Such member withdraws by giving two months' written notice.</p>
+                    <p>(8) Such member is expelled from the Association by reasons of any provisions of the Articles.
+                    </p>
+                    <p>Explanation:</p>
+                    <p>
+                        (i) A firm shall not cease to be a member by reason only of a change in the constitution of the
+                        firm occasioned by the admission, retirement or death of a partner provided the business of the
+                        firm is continued in
+                        the same name in which such firm was elected a member.
+                    </p>
+                    <p>(ii) A firm, joint stock company or other corporation shall not cease to be a member of the
+                        Association upon any change being made in the conventional or corporate name of the firm,
+                        company or corporation.</p>
+                    <p>7.3.2 The decision of the Executive Committee as to whether a member has ceased to be a member of
+                        the Association or not under this Article shall be final and conclusive.</p>
+                    <p>
+                        7.3.3 Any member, who by any means cease to be a member, shall remain liable for and shall pay
+                        to the association all moneys which at the time of such member ceasing to be a member may be due
+                        from such member of
+                        the Association.
+                    </p>
+                    <p>
+                        7.3.4 Any member who ceases to be a member provided he is not subject to any other
+                        disqualification stated hereinbefore shall be eligible for readmission as a member of the
+                        Association on payment of all
+                        outstanding subscriptions and other moneys due from him to the Association. Such member will not
+                        be required to pay admission fee afresh.
+                    </p>
+                    <h1>8. Register of Members</h1>
+                    <p>8.1 The Association shall cause to be kept a Register in which shall be entered</p>
+                    <p>a) the name under which each Member carries on business,</p>
+                    <p>b) the name of the person nominated as the Principal Representative of the Member</p>
+                    <p>c) the name of the person who nominated as the Alternative Representative (if any) of the Member,
+                    </p>
+                    <p>d) the address of the Member as given in the application for membership, together with all
+                        identification, contact and communication details of the Member and representatives.</p>
+                    <p>8.2 Every Member shall forthwith notify to the Secretary any change of any of the above
+                        particulars and such change of particulars of a Member shall immediately be entered in the
+                        Register.</p>
+                    <h1>9. Administration and Management - Executive Committee</h1>
+                    <p>9.1 The administration and management of the affairs of the Association shall be vested in the
+                        Executive Committee which shall consist of</p>
+                    <ul>
+                        <li>elected members,</li>
+                        <li>Past Presidents of the Association , and</li>
+                        <li>co-opted members (optional)</li>
+                    </ul>
+                    <p>9.2 The elected members of the Executive Committee shall be a minimum of 6 (six) and a maximum of
+                        12 (twelve) as follows:</p>
+                    <ul>
+                        <li>
+                            At least three (3) or fifty percent (50%) of the committee, whichever is higher - any
+                            fraction shall be rounded to the next higher number, shall be reserved for Patron Members
+                            (hereinafter referred to as
+                            Reserved Committee Seats or RCS).
+                        </li>
+                        <li>The balance shall be open to Patron and Ordinary Members from among Patron and Ordinary
+                            members (hereinafter referred to as Open Committee Seats or OCS).</li>
+                    </ul>
+                    <p>The elected members of the Executive Committee shall choose from amongst themselves, the
+                        following four office bearers of the Association:</p>
+                    <ul>
+                        <li>one President,</li>
+                        <li>one Vice- President</li>
+                        <li>one Treasurer</li>
+                        <li>one Secretary</li>
+                    </ul>
+                    <p>
+                        9.3 For every year, in addition to the elected and co-opted members, the immediate three Past
+                        Presidents of the Association shall, ipso facto and subject to their acceptance, be members of
+                        the Executive Committee
+                        as Past Presidents (PP). If any such Past President is a member of the Executive Committee in
+                        any other capacity, or is unable or has not accepted the office, the position shall devolve on
+                        earlier Past Presidents
+                        in reverse order of seniority subject to the same terms and conditions. In case any of the
+                        positions cannot be filled, such position(s) shall remain vacant for that year.
+                    </p>
+                    <p>9.4 The Executive Committee shall have the right to co-opt not more than three members from
+                        amongst Patron and Ordinary Members to the Executive Committee from amongst members of the
+                        Association.</p>
+                    <p>9.5 The first Executive Committee, shall hold office until the conclusion of the second Annual
+                        General Meeting .</p>
+                    <p>
+                        9.6 The Executive Committee shall ensure that at no point of time the Executive Committee shall
+                        consist of more than two representatives from the same organization or entity, provided however,
+                        that persons
+                        serving on the Executive Committee as Past Presidents shall not be counted for this purpose.
+                    </p>
+                    <p>9.7 The Executive Committee shall hold office from the conclusion of one Annual General Meeting
+                        till the conclusion of the succeeding Annual General Meeting starting with the second Annual
+                        General Meeting.</p>
+                    <p>9.8 The Members of the Executive Committee for the time being shall be the Directors of the
+                        Company.</p>
+                    <h1>10. Election of Executive Committee</h1>
+                    <p>10.1 The members of the Executive Committee shall be elected from the Patron and Ordinary members
+                        every year before the Annual General Meeting in the manner hereinafter provided.</p>
+                    <p>10.2 Serving members of the Executive Committee shall be eligible to stand for re-election or
+                        re-nomination to the succeeding Executive Committee.</p>
+                    <p>
+                        10.3 At least 10 weeks prior to the Annual General Meeting (AGM), the Secretary shall issue a
+                        notice inviting Patron and Ordinary members to nominate individuals to serve on the Executive
+                        Committee for the
+                        ensuing year in respect of OCS. Such individuals must necessarily be from among the names of
+                        registered principal representatives of Patron and Ordinary Members of the Association. In
+                        addition to Patron members
+                        shall be eligible to nominate individuals from among Patron Member registered principal
+                        representatives to serve on the Executive Committee for the ensuing year in respect of RCS.
+                    </p>
+                    <p>
+                        10.4 All nominations for RCS and OCS shall be proposed and seconded by eligible voters of the
+                        respective category and accepted by the nominee. A member shall not be eligible to nominate a
+                        representative for
+                        election to the Executive Committee of the Association and/or to exercise the right of vote in
+                        such election if the membership subscription from the member is outstanding as on the day of
+                        nomination and/or
+                        election.
+                    </p>
+                    <p>
+                        10.5 The nomination process shall be kept open for a minimum of 2 weeks. Thereafter one further
+                        week shall be allowed for withdrawal of nominations and the list of candidates for election
+                        shall be finalized, at
+                        least 6 weeks before the AGM.
+                    </p>
+                    <p>
+                        10.6 RCS: If the number of eligible and qualified candidates for RCS is less than or equal to
+                        the number of RCS seats, such candidate(s) shall be declared elected, and the balance seats, if
+                        any, deemed to be OCS
+                        seats for that year. If the number of such candidates more than the number of RCS seats, the
+                        election process, as hereinafter provided, shall be followed.
+                    </p>
+                    <p>
+                        10.7 OCS: If the number of candidates for OCS is less than or equal to the number of available
+                        seats, all such candidate(s) shall be declared elected, and the balance seats, if any, shall be
+                        filled by the AGM,
+                        failing which such seats shall be deemed to be a casual vacancy for that year, and treated
+                        accordingly. If the number of such candidates is more than the number of seats, the election
+                        process, as hereinafter
+                        provided, shall be followed.
+                    </p>
+                    <p>10.8 Election Process:</p>
+                    <p>10.8.1 If an election is required, the Executive Committee shall appoint an Election Committee of
+                        three from among all the Members of the Association at least 5 weeks before the AGM.</p>
+                    <p>
+                        10.8.2 It should be ensured that the members of the Committee are independent insofar as the
+                        candidates standing for election are concerned. The Election Committee should ensure fairness
+                        and transparency in all
+                        matters concerning the elections.
+                    </p>
+                    <p>
+                        10.8.3 The Election Committee shall ensure that requisite ballot papers are prepared and sent to
+                        members eligible to vote together with sealable envelopes at least 25 days before the AGM.
+                        Arrangements should be
+                        made to receive ballot papers by post and/or courier at an address designated by the Election
+                        Committee.
+                    </p>
+                    <p>
+                        10.8.4 Members should be allowed at least 10 days to return the ballot papers after exercising
+                        their franchise. Ballot papers received after the designated date shall not be counted unless
+                        agreed by all
+                        candidates prior to the counting process.
+                    </p>
+                    <p>10.8.5 The Election Committee should follow generally accepted norms with regard to postal
+                        ballots, in terms of recording receipt, numbering, safe storage, etc.</p>
+                    <p>
+                        10.8.6 The Election Committee should make appropriate arrangement for counting of the ballots.
+                        Candidates or their nominated representatives shall be notified of, and have the right to be
+                        present during, the
+                        opening of ballots and tabulation of the same. In the event of a tie, the winner shall be
+                        determined by a draw of lots between the candidates.
+                    </p>
+                    <p>10.8.7 The Election Committee should complete the tabulation of results at least 7 days before
+                        the AGM and communicate the same to the Executive Committee and the candidates.</p>
+                    <p>10.8.8 If an objection or request for recount is received from a candidate, the Election
+                        Committee should deal with such request after due consideration according to the opinion of the
+                        majority.</p>
+                    <p>
+                        10.8.9 After all objections, if any, have been dealt with, the Election Committee shall forward
+                        the names of the persons declared elected to the Executive Committee for the succeeding year, to
+                        the Secretary of
+                        the current Executive Committee before the commencement of the AGM, preferably a few days prior
+                        thereto.
+                    </p>
+                    <p>10.8.10 The names shall be placed for formal confirmation at the Annual General Meeting by way of
+                        a separate motion.</p>
+                    <h1>11. Executive Committee - Other Matters</h1>
+                    <p>11.1 Additional Members: Notwithstanding anything herein contained, the Executive Committee shall
+                        have the power to appoint additional members of the Executive Committee;</p>
+                    <p>PROVIDED that such additional members shall hold office only up to the date of the next Annual
+                        General Meeting of the Association;</p>
+                    <p>PROVIDED FURTHER that the number of members and additional members of the Executive Committee
+                        together shall not exceed the maximum strength for the Executive Committee fixed by these
+                        Articles.</p>
+                    <p>
+                        11.2 Casual vacancy: If any vacancy arises in the new Executive Committee for want of sufficient
+                        number of nominations for election, the newly elected Executive Committee shall have powers to
+                        fill up such vacancy
+                        by co-option of members from Patron and Ordinary members. If a member of the Executive Committee
+                        during his membership tenure loses his nomination from the firm as and registered representative
+                        on the
+                        Association, he shall automatically cease to be a member of the Executive Committee. However, he
+                        will be eligible for co-option by the Executive Committee provided he is nominated as a
+                        representative by any other
+                        member firm.
+                    </p>
+                    <p>
+                        11.3 Election of Office Bearers: At their first meeting after every Annual General Meeting, the
+                        Executive taking office shall elect from among themselves the office bearers of the Association
+                        to hold office until
+                        the following Annual General Meeting.
+                    </p>
+                    <h1>12 President and Vice-President</h1>
+                    <p>
+                        12.1 In the event of a vacancy being caused in the office of the President due to resignation,
+                        incapacity to act, death or otherwise, the Vice-President shall ipso facto become the President
+                        of the Association.
+                        If, however, neither of them is willing or available for appointment as President, the Executive
+                        Committee shall fill the vacancy by election from amongst their own members. During any
+                        temporary vacancy occurring
+                        in the office of the President, the Vice-President, shall act as President. If, however, both
+                        are not available for the purpose, an Acting President shall be elected by the Executive
+                        Committee.
+                    </p>
+                    <p>
+                        12.2 The President shall preside at all meetings of the Executive Committee, at all General
+                        Meetings and lead all deputations. He may address the members of the Executive committee or at
+                        General Meetings on such
+                        subjects as he may deem proper but such address shall not be taken to represent the views of the
+                        Executive Committee or of the Association unless such representation is expressly indicated.
+                    </p>
+                    <p>
+                        12.3 The President shall also, at any time when he shall deem proper communicate to the
+                        Association or to the Executive Committee such matters and shall make such suggestions as may,
+                        in his opinion, tend to
+                        promote the prosperity and welfare of the members and the industry of the Association or
+                        increase the usefulness of the Association or may be conducive to the attainment or promotion of
+                        any of the objects of the
+                        Association or relevant thereto and shall perform such other duties as may be incidental to the
+                        office of the President.
+                    </p>
+                    <p>
+                        12.4 The Vice-President in the absence of the President shall have the powers to perform the
+                        duties of the President. In the absence of both the President and the Vice-President, the powers
+                        and duties of the
+                        President shall be exercised and discharged by one of the members of the Executive Committee
+                        duly nominated by the Executive Committee.
+                    </p>
+                    <h1>13. Proceedings of Meetings of the Executive Committee.</h1>
+                    <p>
+                        13.1 The Executive Committee shall meet for the disposal of business at such time and place as
+                        the President may determine, adjourn and otherwise regulate its meetings as it thinks fit
+                        PROVIDED HOWEVER that the
+                        Executive Committee shall meet at least once in six calendar months.
+                    </p>
+                    <p>13.2 The President of the Executive Committee shall be the President of the Association.</p>
+                    <p>
+                        13.3 The President or in his absence the Vice President shall take the Chair at all meetings of
+                        the Executive Committee and if at any meeting none of them be present within ten minutes of the
+                        time appointed for
+                        holding the same, the members present shall choose one of them to be the President of the
+                        meeting.
+                    </p>
+                    <p>13.4 The meeting of the Executive Committee shall be called by the Secretary in consultation with
+                        the President or on the requisition of not less than four members of the Executive Committee.
+                    </p>
+                    <p>
+                        13.5 Save as otherwise expressly provided in the Act, questions arising at any meeting of the
+                        Executive Committee shall be decided by a majority of votes to be determined by showing hands.
+                        In case of an equality
+                        of votes, the Chairman of the meeting shall have a second or casting vote in addition to his
+                        own.
+                    </p>
+                    <p>
+                        13.6 The Continuing members of the Executive Committee may act notwithstanding any vacancy in
+                        the Executive Committee; but if and so long as their number is reduced below the quorum fixed by
+                        the Articles for a
+                        meeting of the Executive Committee, the continuing members or members may act for the purpose of
+                        increasing the number of members to that fixed for the quorum, or for summoning a General
+                        Meeting of the
+                        Association, and for no other purpose.
+                    </p>
+                    <p>
+                        13.7 The quorum for the meeting of the Executive Committee shall be one-third of the total
+                        strength of the elected Executive Committee (any fraction contained in that one-third to be
+                        rounded off as one) provided
+                        that the quorum shall not be less than three members.
+                    </p>
+                    <p>
+                        13.8 The Executive Committee may, subject to the provisions of the Act, delegate any of its
+                        powers to Sub-Committees consisting of such members or members of its body as it thinks fit. Any
+                        Sub-Committee so formed
+                        shall, in the exercise of the powers so delegated, conform to any regulations that may be
+                        imposed on it by the Executive Committee.
+                    </p>
+                    <p>13.9 A Committee or Sub-Committee may meet and adjourn as it thinks proper.</p>
+                    <p>
+                        13.10 All acts done by any meeting of the Executive Committee or of a Sub-Committee thereof or
+                        by any office bearer or by any person or persons holding delegated authority shall,
+                        notwithstanding that it may be
+                        afterwards discovered that there was some defect in the election or appointment of any one, or
+                        more members of Executive Committee or of any office bears or of any persons acting as
+                        aforesaid, or that they or any
+                        of them were disqualified, be as valid as if every such member, office bearer or person had been
+                        duly elected, appointed and was qualified.
+                    </p>
+                    <p>
+                        13.11 Save as otherwise expressly provided by the Act, the Executive Committee or the
+                        Sub-Committee may pass circular resolutions. But no circular resolutions shall be deemed to have
+                        been duly passed by the
+                        Executive Committee or the Sub-Committee thereof by circulation, unless the resolutions has been
+                        circulated in draft, together with the necessary papers if any, to all the members of the
+                        Executive Committee, or
+                        to all the members of the Sub-Committee then in India (not being less in number than quorum
+                        fixed for a meeting of the Executive Committee or the Sub-Committee as the case may be) and to
+                        all other members of the
+                        Executive Committee or the Sub-Committee at their usual address in India, as has been approved
+                        by such of the members of the Executive Committee of the Sub-Committee as are then in India, or
+                        by a majority of such
+                        of them, as are entitled to vote on the resolution. A circular resolution duly passed as
+                        aforesaid shall be as valid and effectual as if it has been passed at a meeting of the Executive
+                        Committee or Sub-Committee
+                        duly convened and held.
+                    </p>
+                    <h1>14. Powers of the Executive Committee</h1>
+                    <p>
+                        14.1 The Executive Committee shall be the governing body of the Association and in addition to
+                        the powers and authorities expressly conferred upon it by statute or by these Articles, the
+                        Executive Committee may
+                        exercise all such powers of the Association and do all such acts and things as may be exercised
+                        or done by the Association as are not, by the Act or these Articles, required to be executed or
+                        done by the
+                        Association in General Meeting but subject nevertheless to any regulations of these Articles,
+                        and to such regulations or directions being not inconsistent with the Act or these Articles, as
+                        may be prescribed or
+                        given by the Association in General Meeting; provided that no such regulation or direction shall
+                        invalidate any prior apt of the Executive committee which would have been valid if the
+                        regulation or direction had
+                        not been prescribed or given.
+                    </p>
+                    <p>14.2 Without prejudice to the general powers conferred by Article 14.1 hereof but subject to the
+                        provision of the Act or these Articles the Executive Committee shall have the following powers
+                        viz:</p>
+                    <p>
+                        (i) To appoint any Departmental Committee or Sub-Committee from amongst the Members of the
+                        Executive Committee or the Members of the Association and such Departmental Committee or Sub
+                        committees may be for such
+                        purposes as the Executive Committees may determine.
+                    </p>
+                    <p>
+                        (ii) To delegate, subject to the provisions of the Act, and subject to such conditions as they
+                        think fit, any of their powers to Departmental Committee or Sub-Committees and to make, vary and
+                        repeal by-laws or
+                        rules for the regulations of the proceedings of the Departmental Committees or Sub-Committees.
+                    </p>
+                    <p>(iii) To appoint a Secretary, Treasurer and other office bearers as it may deem proper and
+                        prescribe their duties and functions from time to time.</p>
+                    <p>
+                        (iv) To make such by-laws (not being inconsistent with these Articles) from time to time for the
+                        management of the Association as it shall think proper and from time to time to amend or cancel
+                        any bye-laws for
+                        the time being in force.
+                    </p>
+                    <p>
+                        (v) To enter into arrangement upon such terms and subject to such conditions as the Executive
+                        Committee may deem desirable for working in conjunction with any other Association organised for
+                        the protection or
+                        development of the Cutting Tool Industry or any branch or aspect thereof or for like objects
+                        that may apply to be allowed to work in conjunction with the Association provided the objects
+                        for which such other
+                        Association is or shall be formed are not inconsistent with the objects of the Association as
+                        defined in his Memorandum of Association.
+                    </p>
+                    <p>
+                        (vi) To purchase or otherwise acquire or take on lease for the Association any property, rights
+                        or privileges which the Association is authorised to acquire, at or for such price or
+                        consideration and generally on
+                        such terms and conditions as it may think fit, and in any such purchase or other acquisition to
+                        accept such titles as the Executive Committee may believe or may be advised, to be reasonably
+                        satisfactory and also
+                        to mortgage, sell, let or otherwise encumber, deal with or dispose of the same or any other
+                        property of the Association on such terms as it may think proper.
+                    </p>
+                    <p>
+                        (vii) To insure and keep insured against loss or damage by fire or otherwise for such period and
+                        to such extent as it may think proper, all or any part of the immovable or movable property of
+                        the Association
+                        either separately or jointly and to assign, surrender or discontinue any policies of insurance
+                        effected in pursuance of this power.
+                    </p>
+                    <p>(viii) To open accounts with any banker or bankers or with any company, firm or individual and to
+                        pay money into and draw money from any such account from time to time as the Executive Committee
+                        may think fit.</p>
+                    <p>
+                        (ix) To institute, prosecute, conduct, defend, refer to arbitration, compound or abandon any
+                        claims or legal proceedings by or against the Association or its officers, or otherwise
+                        concerning the affairs of the
+                        Association and also to compound release, abandon or allow time for payment or satisfaction of
+                        any debts due and of any claims or demands by or against the Association, and to refer any
+                        differences to arbitration
+                        and observe and perform any awards made thereon.
+                    </p>
+                    <p>(x) To make and give receipts, releases and other discharges for moneys payable to the
+                        Association and for the claims and demands of the Association.</p>
+                    <p>
+                        (xi) To invest and deal with any moneys of the Association not immediately required for the
+                        purposes thereof, upon such security or without security, and in such manner as it may think
+                        fit, and from time to time
+                        vary or realise such investments.
+                    </p>
+                    <p>
+                        (xii) To determine from time to time who shall be entitled to sign on the Association's behalf,
+                        bills, notes, receipts acceptances, endorsements, cheques, dividend warrants, releases,
+                        contracts and documents, and
+                        to give the necessary authority for such purpose.
+                    </p>
+                    <p>
+                        (xiii) Within the limits provided by the Act, to provide for the welfare of employees or
+                        ex-employees of the Association and the wives, widows and families or the dependants of such
+                        persons, by building or
+                        contributing to the building of the houses, dwellings or chawls or by grants of moneys,
+                        pensions, allowances, bonus or other payments, or by creating and from time to time subscribing
+                        or contributing to Provident
+                        Fund of other Associations, Institutions, funds or trusts and by providing or subscribing or
+                        contributing towards places of instruction or recreation, hospital and dispensaries, medical and
+                        other attendance and
+                        other assistance as the Committee shall think fit.
+                    </p>
+                    <p>
+                        (xiv) Within the limits provided by the Act, to subscribe or contribute or otherwise to assist
+                        or to guarantee money to charitable, benevolent religious, scientific, national or public
+                        institutions objects or
+                        purposes or for any exhibition provided that subscription, contributions, assistance or
+                        guarantee to or for any object or purpose shall be given, made, or provided only with the
+                        consent of three-fourths of the
+                        members of the Executive Committee present and entitled to vote and voting at the Meeting of the
+                        Committee.
+                    </p>
+                    <p>
+                        (xv) From time to time and any time to establish any Regional Committees for managing any of the
+                        affairs of the Association in any state in India and to appoint any persons to be members of
+                        such Regional
+                        Committees and from time to time and at any time to delegate to any person or persons so
+                        appointed any of the powers, authorities and discretions for time being vested in the Committee
+                        and to authorise the
+                        members for the time being of any such Committee or any of them, to, fill up any vacancies,
+                        therein and to act notwithstanding vacancies, and any such appointment or delegation may be made
+                        on such terms, and
+                        subject to such conditions as the Executive Committee may think fit, and the Executive Committee
+                        may at any time remove any person so appointed, and may annul or vary any such delegation.
+                    </p>
+                    <p>
+                        (xvi) At any time and from time to time, by Power of Attorney under the Seal of the Association
+                        to appoint any persons to be the Attorney or Attorneys of the Association, for such purposes and
+                        with such powers,
+                        authorities and discretions (not exceeding those vested or exercisable by the Executive
+                        Committee under these presents), and for such period and subject to such conditions as the
+                        Executive Committee may from time
+                        to time think fit, and any such appointment may (if the Executive Committee thinks fit) be made
+                        in favour of the members or any of the members of any Regional Committee established as
+                        aforesaid or in favour of
+                        any other person and any such power may contain much powers for the protection or convenience of
+                        persons dealing with such attorneys as the Executive Committee may think fit, and may contain
+                        powers enabling any
+                        such delegates or attorneys as aforesaid to sub-delegate all or any of the powers, authorities,
+                        and discretions for the time being vested in them.
+                    </p>
+                    <p>
+                        (xvii) Subject as aforesaid, for and in relation to any of the matters or otherwise for the
+                        purposes of the Association, to enter into all such negotiations and contracts and rescind and
+                        vary all such contracts
+                        and execute contracts and execute and do all such acts, deeds and things in name and on behalf
+                        of the Association as it may consider expedient.
+                    </p>
+                    <h1>15. Directors</h1>
+                    <p>The First Directors of the company are :-</p>
+                    <ul style="list-style: none; margin-left: 0px;">
+                        <li>1. Mr. Tosher Gusti Hormusjee</li>
+                        <li>2. Mr. Lakshmikanthan Krishnan</li>
+                        <li>3. Mr. Recai Kiliik</li>
+                        <li>4. Mr. Santanoo Medhi</li>
+                        <li>5. Mr. Sameer Aghi</li>
+                        <li>6. Mr. Seshagiri Rao Ravishankar</li>
+                        <li>7. Mr. Chun Sik You</li>
+                    </ul>
+                    <p>The First Directors shall be the First Executive Committee and shall hold office until the
+                        conclusion of the Second annual General Meeting</p>
+                    <h1>16. General Meetings</h1>
+                    <p>16.1 All general meetings other than annual general meetings shall be called extraordinary
+                        general meetings.</p>
+                    <p>
+                        16.2 In accordance with the provisions of Sec. 166 of the Companies Act, 1956, the Association
+                        shall in each year hold in addition to any other meeting, a general meeting as its Annual
+                        General Meeting and shall
+                        specify the meeting as such in the notices calling it, and not more than 15 months shall elapse
+                        between the date of one annual general meeting of the Association and that of the next.
+                    </p>
+                    <p>
+                        16.3 Every Annual General Meeting shall be called on a date and at the time and place decided
+                        upon before hand by the Executive Committee having regard to the directions, if any, given in
+                        this regard by the
+                        Association in general meeting.
+                    </p>
+                    <p>16.4 The Executive Committee may, whenever it thinks fit, call an extraordinary general meeting.
+                    </p>
+                    <p>
+                        16.5 The Executive Committee shall call an extraordinary general meeting on receipt of a valid
+                        requisition from members of the Association. A valid requisition is for this purpose is a
+                        requisition made by such
+                        number of the members of the Association as have at the date of deposit of the requisition, not
+                        less than one tenth of the total voting power of all the members having at the said date a right
+                        to vote in regard
+                        to the matter in question. Such requisition and such meeting shall be compliance with the
+                        provisions of Sec. 169 of the Act. The requisition shall set out the matters for consideration
+                        of which the meeting is to
+                        be called, shall be signed by the requisitionists and shall be deposited at the registered
+                        office of the Association. Only matters so specified in the requisition shall be discussed at
+                        the requisitioned meeting.
+                    </p>
+                    <p>
+                        16.6 If the Executive Committee does not, within twenty one days from the date of the deposit of
+                        a valid requisition in regard to any matter, proceed to duly call a meeting for the
+                        consideration of those matters
+                        on a day not later than 45 days from the date of the deposit of the requisition, the meeting may
+                        be called by such of the requisitionists as represent not less than one-tenth of the total
+                        voting power of all the
+                        members having at the said date a right to vote in regard to that matter, but in either case any
+                        meeting so called shall be held within three months from the date of the deposit of the
+                        requisition. Any meeting
+                        called by the requisitionists shall be called in the same manner, as nearly as possible as that
+                        in which meetings are to be called by the Executive Committee.
+                    </p>
+                    <p>
+                        16.7 A general meeting of the Association may be called by giving not less than 21 days notice
+                        in writing or by giving a shorter notice with the consent of members as provided in Section 171
+                        (2) of the Act, Every
+                        notice of a meeting shall specify the place and the day and hour of the meeting and shall
+                        contain a statement of the business to be transacted thereat. The Notice of the meeting shall be
+                        given to all the persons
+                        mentioned in Section 172 of the Act and where any special business is to be transacted at the
+                        meeting an explanatory statement shall be annexed to the notice as provided in Section 173 of
+                        the Act.
+                    </p>
+                    <p>
+                        16.8 Where it is proposed to pass a special resolution, the intention to propose a resolution as
+                        a special resolution shall be specified in the notice calling the General Meeting or other
+                        intimation given to the
+                        members of the resolution.
+                    </p>
+                    <p>16.9 Notice of Resolution received from members and the resolutions proposed shall be dealt with
+                        as provided in Section 188 of the Act.</p>
+                    <p>16.10 The accidental omission to give notice to or the non-receipt of notice, by any member or
+                        other person to whom it should be given shall not invalidate the proceedings at the meeting.</p>
+                    <p>
+                        16.11 Five members entitled to vote and present in person shall be a quorum for a General
+                        Meeting and no business shall be transacted at any general meeting unless the quorum of members
+                        is present at the time
+                        when the meeting proceeds with the business.
+                    </p>
+                    <p>
+                        16.12 If within half an hour after the time appointed for holding of a general meeting a quorum
+                        is not present, the meeting, if called upon the requisition of members shall stand dissolved. In
+                        any other case the
+                        meeting shall stand adjourned to the same day in the next week at the same time and place or to
+                        such other day and at such other time and place as the Executive Committee may determine. If at
+                        the adjourned
+                        meeting also, a quorum is not present within half an hour from the time appointed for holding
+                        the meeting, the members present shall be a quorum and may transact the business for which the
+                        meeting was called.
+                    </p>
+                    <p>
+                        16.13 The President of the Executive Committee shall be entitled to preside as the Chairman at
+                        every General Meeting of the Association. If there be no President, or, if at any general the
+                        President is not
+                        present within fifteen minutes of the time appointed for holding the meeting or is unwilling to
+                        act as Chairman of the meeting, the members of the Executive Committee present shall elect one
+                        of their members to
+                        be Chairman of the meeting; and if no member of the Executive Committee is willing to act as
+                        Chairman, the members present shall choose one of them to be Chairman of the meeting.
+                    </p>
+                    <p>16.14 The Chairman may, with the consent of any meeting at which a quorum is present adjourn the
+                        meeting from time to time and from place to place.</p>
+                    <p>16.15 No business shall be transacted at any adjourned meeting other than the business left
+                        unfinished at the meeting for which adjournment took place.</p>
+                    <p>16.16 When a meeting is adjourned for thirty days or more, notice of the adjourned meeting shall
+                        be given as in the case of original meeting.</p>
+                    <p>16.17 Save as aforesaid, it shall not be necessary to give any notice of an adjournment or of the
+                        business to be transacted at an adjournment meeting.</p>
+                    <p>16.18 At any General Meeting a resolution put to the vote of the meeting shall unless a poll is
+                        demanded under Sec.179 of the Act be decided on a show of hands.</p>
+                    <p>
+                        16.19 A declaration by the Chairman that on a show of hands, a resolution has or has not been
+                        carried or has or has not been carried either unanimously or by a particular majority, and an
+                        entry to that effect in
+                        the book containing the minutes of the proceedings of the Association, shall be exclusive
+                        evidence of the fact, without proof of the number of proportion of the votes cast in favour of
+                        or against such
+                        resolutions.
+                    </p>
+                    <p>
+                        16.20 In the case of an equality of votes whether on a show of hands or a poll, the Chairman of
+                        the meeting at which the show of hands takes place, or at which a poll is demanded, be entitled
+                        to a second or
+                        casting vote.
+                    </p>
+                    <p>16.21 Poll:</p>
+                    <p>
+                        16.21.1 Before or on the declaration of the result of the voting on any resolution on a show of
+                        hands, a poll may be ordered to be taken by the Chairman of the meeting of his own motion, and
+                        shall be ordered to
+                        be taken by him on a demand made in that behalf
+                    </p>
+                    <p>a. by at least five members having the right to vote on the resolution and present or</p>
+                    <p>b. by members present in person or by proxy and having not less than one-tenth of the total
+                        voting power in respect of the resolution</p>
+                    <p>16.21.2 The demand for poll may be withdraw at any time by the person or persons who made the
+                        demand.</p>
+                    <p>16.21.3 A poll demanded on a question of adjournment shall be taken forthwith.</p>
+                    <p>
+                        16.21.4 A poll demanded on any other question (not being a question relating to the election of
+                        a Chairman which is provided for in Sec. 175 of the Act) shall be taken at such time not being
+                        later than 48 hours
+                        from the time when the demand was made, as the Chairman may direct. The poll shall be taken and
+                        scrutinisers shall be appointed as provided in Section 184 and 185 of the Act. The result of the
+                        poll shall be
+                        deemed to be the decision of the meeting on the resolution on which the poll was taken. Subject
+                        to the provisions of the Act, the Chairman of the meeting shall have power to regulate the
+                        manner in which a poll
+                        shall be taken.
+                    </p>
+                    <p>16.21.5 Any business other than that upon which a poll has been demanded may be proceeded with,
+                        pending the taking of the poll.</p>
+                    <p>
+                        16.22 Ordinary and special resolutions of the Association shall comply with the provisions of
+                        Sec. 189 of the Act. In case of resolutions requiring special notice under the Act the
+                        provisions of Sec. 190 of the
+                        Act shall be complied with.
+                    </p>
+                    <p>
+                        16.23 Where a resolution is passed at an adjourned meeting of the Association, the resolution
+                        shall, for all purposes, be treated as having been passed on the date on which it was in fact
+                        passed, and shall not be
+                        deemed to have been passed at any earlier date.
+                    </p>
+                    <p>16.24 The Association shall comply with the provisions of Sec. 192 of the Act with respect to
+                        registration of certain resolutions and agreements.</p>
+                    <p>16.25 Ordinary And Special Business at General Meetings</p>
+                    <p>16.25.1 In the case of an Annual General Meeting all business to be transacted at the meeting
+                        shall be deemed special with the exception of the business relating to:-</p>
+                    <p>(i) The consideration of the audited accounts and Balance Sheet and the report of the Executive
+                        Committee and the report of the Auditors.</p>
+                    <p>(ii) The announcement and confirmation of the result of election of the Members of the Executive
+                        Committee.</p>
+                    <p>(iii) The appointment and fixing of the remuneration of the Auditors.</p>
+                    <p>16.25.2 In the case of any other general meeting all business shall be deemed special.</p>
+                    <p>
+                        16.25.3 Where any items of business to be transacted at the meeting are deemed to be special as
+                        aforesaid these shall be annexed to the notice of the Meeting an Explanatory Statement setting
+                        out all material
+                        facts concerning each such time of business as are set out in Section 173 of the Act as far as
+                        applicable.
+                    </p>
+                    <p>16.26 Notice of any general meeting shall be given to members of the Association and to the
+                        auditor or auditors for the time being of the Association in the manner provided by Sec. 53 of
+                        the Act.</p>
+                    <p>
+                        16.27 Upon a show of hands every member entitled to attend and vote at General Meeting and
+                        present in person shall have one vote and upon a poll every such member present in a person or
+                        by proxy shall have one
+                        vote.
+                    </p>
+                    <p>16.28 Only eligible members present in person shall be entitled to vote on a show of hands.
+                        Registered representatives or their alternates shall be considered as eligible members for this
+                        purpose.</p>
+                    <p>16.29 No member shall exercise any voting right in any general meeting unless all sums presently
+                        payable by him to the Association have been paid up to date.</p>
+                    <p>
+                        16.30 No objection shall be raised as to the qualification of any voter or validity of any vote
+                        except at the meeting of an adjourned meeting or poll at which the vote objected to is given or
+                        tendered and any
+                        vote not disallowed at such meeting or poll shall be valid for all purposes.
+                    </p>
+                    <h1>17. Minutes of Meetings</h1>
+                    <p>
+                        17.1 The Association shall cause minutes of all proceedings of General Meetings and all
+                        proceedings of meetings of the Executive Committee o be entered in books kept for that purpose
+                        in accordance with the
+                        provisions of Sec. 193 of the Act.
+                    </p>
+                    <p>
+                        17.2 Any such minutes, if purporting to be signed by the Chairman of the meeting at which the
+                        proceedings took place, or by the Chairman of the next meeting, shall be evidence of the
+                        proceedings and the
+                        presumptions to be drawn as provided in Sec. 195 apply.
+                    </p>
+                    <p>
+                        17.3 The books containing the minutes of the proceedings of any general meeting of the
+                        Association shall be kept at the registered office of the Company, and shall be open, during
+                        business hours, to inspection of
+                        any member, without charge, subject to such reasonable restrictions as the Association by its
+                        Articles or in the General Meeting impose but so that not less than two hours each day are
+                        allowed for inspection.
+                    </p>
+                    <p>
+                        17.4 Any member shall be entitled to be furnished, within seven days after he has made a request
+                        in that behalf to the Association with a copy of any minutes referred to above, on payment of
+                        such sum as may be
+                        decided by the Executive Committee but not exceeding the amount permitted by law.
+                    </p>
+                    <h1>18. Accounts & Audit</h1>
+                    <p>18.1 The Association shall keep at its registered office or at such Accounts other place in India
+                        as the Executive Committee thinks fit, proper books of account with respect to</p>
+                    <p>(a) All sums of money received and expended by the Association and the matters in respect of
+                        which the receipt and expenditure takes place, and</p>
+                    <p>(b) the assets and liabilities of the Association.</p>
+                    <p>
+                        18.2 At every Annual General Meeting of the Association the Executive Committee of the
+                        Association shall lay before the Association a Balance Sheet and Income and Expenditure Account
+                        as provided in Sec. 210 of
+                        the Act.
+                    </p>
+                    <p>18.3 The Association shall at each Annual General Meeting appoint an auditor or auditors to hold
+                        office from the conclusion of that meeting until the conclusion of the next Annual General
+                        Meeting.</p>
+                    <p>
+                        18.4 The Executive Committee may fill any casual vacancy in the office of auditors by the
+                        appointment of another auditor or auditors who shall hold such office until the conclusion of
+                        the next Annual General
+                        Meeting provided that where such vacancy is caused by the resignation of the auditor or
+                        auditors, the vacancy shall only be filled by the Association in general meeting. But while such
+                        vacancy continues the
+                        remaining auditor or auditors if any may act.
+                    </p>
+                    <p>18.5 At any Annual General Meeting, a retiring auditor, by whatsoever authority, appointed shall
+                        be reappointed unless any of the circumstances specified in Sec. 224 of the Act shall have
+                        arisen.</p>
+                    <p>
+                        18.6 In the case of a resolution at any general meeting for appointing as auditor a person other
+                        than a retiring auditor or providing expressly that a retiring auditor shall not be reappointed,
+                        the provisions of
+                        Sec. 225 of the Act shall be complied with.
+                    </p>
+                    <p>
+                        18.7 The remuneration of the auditor or auditors shall be fixed by the Association in general
+                        meeting except that the remuneration of any auditor or auditors appointed by the Executive
+                        Committee to fill a casual
+                        vacancy may be fixed by the Committee.
+                    </p>
+                    <h1>19. The Seal</h1>
+                    <p>
+                        The Executive Committee shall provide for the safe custody of the Seal and the Seal shall not be
+                        affixed to any instrument except by the authority of a resolution of the Executive Committee or
+                        of the Committee
+                        previously given and except in the presence of the President, or the Vice-President or any two
+                        members of the Executive Committee who shall sign the instrument to which the Seal is affixed.
+                    </p>
+                    <h1>20. Indemnity</h1>
+                    <p>
+                        The President, Vice-President, Secretary, Treasurer, every member of the Executive Committee,
+                        every other officer or servant or agent for the time being of the Association shall be
+                        indemnified by the Association
+                        out of the assets of the Association against any liability, cost, losses and expenses (including
+                        travelling expenses) which he may incur or become liable to, by reason of any contract entered
+                        into or act or thing
+                        properly and lawfully done by him in the discharge of his duties or in defending any proceedings
+                        whether civil or criminal, in which judgement is given in his favour or in which he is
+                        acquitted.
+                    </p>
+                    <h1>21. Liability for One's Own Acts</h1>
+                    <p>
+                        The President, Vice-President, Secretary, Treasurer, every member of the Executive Committee,
+                        every other officer or servant or agent shall not be liable for losses or damages incurred by
+                        the Association arising
+                        from the acts or defaults of any other office bearer, member of the Executive Committee, servant
+                        or agent of the Association, unless the same has happened through his own dishonesty or
+                        collusion with the
+                        person(s) responsible for such loss or damage.
+                    </p>
+                    <h1>22. Amendment</h1>
+                    <p>No amendment, modification or alteration of these Articles shall be valid unless passed by
+                        three-fourths majority of votes cast at the General Meeting.</p>
+                    <h1>23. Secrecy</h1>
+                    <p>
+                        Subject to the provision of the Act and the Articles, no member shall be entitled to require
+                        discovery of or any information respecting any matter which may relate to the conduct of the
+                        affairs of the Association
+                        and which, in the opinion of the President, it would be inexpedient in the interest of the
+                        members to disclose.
+                    </p>
+                </div>
+            </div>
+            <div class="gray-bottom">
+                <a href="#" class="btn-top">Move To Top</a>
+            </div>
+        </div>
+
+        <!-- address bar ends -->
+        <div class="navbar-bottom">
+            <p class=" pt-3">Copyright @ 2020. All Rights Reserved.</p>
+            <div class="nabar-bottom-icons">
+                <a href="#">
+                    <ion-icon name="logo-facebook" class="logo-facebook md hydrated" role="img"
+                        aria-label="logo facebook"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-twitter" class="logo-twitter md hydrated" role="img" aria-label="logo twitter">
+                    </ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-linkedin" class="logo-linkedin md hydrated" role="img"
+                        aria-label="logo linkedin"></ion-icon>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+</body>
+
+</html>

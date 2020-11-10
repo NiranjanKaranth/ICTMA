@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorandum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 110%;
+        }
+
+        .main-content {
+            width: 100%;
+            margin-top: 106px;
+        }
+
+        .main-content-block {
+            width: 100%;
+            display: flex;
+            background: #d7d9d5;
+        }
+
+        .border {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            background-image: url("../resources/ictma_bar.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .heading {
+            color: #fff;
+            font-size: 25px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 110px;
+            text-transform: uppercase;
+        }
+
+        .main-parent {
+            width: 1140px;
+            background-color: #e6e8e3;
+        }
+
+        .main-child {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .p-title {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .h1-heading {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .h1-main-objects,
+        .h1-objects {
+            font-size: 18px;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+
+        .title {
+            margin-top: 30px;
+        }
+
+        .incorporated-h1,
+        .limited-h1 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .company {
+            margin-bottom: 20px;
+        }
+
+        .the-name {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .gray-bottom {
+            background-color: #d1d1c1;
+        }
+
+        .btn-top {
+            position: fixed;
+            bottom: 10%;
+            color: #707c24;
+            right: 30px;
+            font-size: 16px;
+        }
+
+        .btn-top:hover {
+            text-decoration: none;
+            color: #666666;
+            outline: none;
+            border: none;
+        }
+
+        /* media query */
+        @media only screen and (min-width: 1367px) and (max-width: 1600px) {
+            .main-child {
+                width: 75%;
+            }
+        }
+
+        @media only screen and (min-width: 1281px) and (max-width: 1366px) {
+            .main-child {
+                width: 80%;
+            }
+
+            .p-to-sell {
+                width: 560px;
+            }
+        }
+
+        @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+            .main-child {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) and (max-width: 1024px) {
+            .main-child {
+                width: 78%;
+            }
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 992px) {
+            .btn-top {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 fixed-top">
+        <a class="navbar-brand" href="../index.html"><img class="main-logo" src="../resources/ictma_logo.png"
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto  mt-lg-0  navbar-ul">
+                <li class="nav-item active">
+                    <a class="nav-link navbar-text-color" href="../index.html">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link navbar-text-color" href="#about">About</a>
+                    </li> -->
+
+                <li class="nav-item">
+                    <div class="dropdown navbar-text-color">
+                        <a class="dropbtn ">About</a>
+                        <div class="dropdown-content">
+                            <a href="./our_mission.html">Our Mission</a>
+                            <a href="./president_message.html">President's Message</a>
+                            <a href="./members.html">Members</a>
+                            <a href="./office_bearers.html">Office Bearers</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color" href="./article.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color" href="#">Memorandum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color" href="./class.html">Classifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color" href="./memberships.html">Memberships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color " href="./survey.html">Survey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text-color border-0" href="./contact_us.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="border">
+            <h1 class="heading">Memorandum</h1>
+        </div>
+        <div class="main-content-block">
+            <div class="main-parent">
+                <div class="main-child">
+                    <p class="p-title">(Incorporated Sec 8 of the Companies Act 2013)
+                        Company Limited by Guarantee not having Share Capital</p>
+                    <h1 class="h1-heading title">MEMORANDUM OF ASSOCIATION</h1>
+                    <h1 class="h1-heading">OF</h1>
+                    <h1 class="incorporated-h1">(Incorporated U/s 25 of the Companies Act 1956)</h1>
+                    <h1 class="limited-h1 company">Company Limited by Guarantee not having Share Capital</h1>
+                    <h1 class="h1-heading">MEMORANDUM OF ASSOCIATION OF INDIAN CUTTING TOOL MANUFACTURERS' ASSOCIATION
+                    </h1>
+                    <p class="the-name">I. The name of the Company shall be INDIAN CUTTING TOOL MANUFACTURERS'
+                        ASSOCIATION.</p>
+                    <p>II. The Registered Office of the Association will be situated in the State of Karnataka.</p>
+                    <p>III. The objects for which the Association is established are:</p>
+                    <h1 class="h1-main-objects">A. MAIN OBJECTS OF THE ASSOCIATION TO BE PURSUED ON INCORPORATION :</h1>
+                    <p>1. To promote the manufacture, trade, commerce and use of Cutting Tools in India and to
+                        encourage
+                        and afford protection to entities connected with manufacture, trade and commerce of Cutting
+                        Tools.
+                    </p>
+                    <p>2. To constitute and maintain a Central Organisation for co-operation between all entities
+                        connected
+                        with the manufacture, trade, commerce, use or otherwise of Cutting Tools in India.</p>
+                    <p>3. To render assistance and advice to Members and to promote and further mutual assistance
+                        between
+                        members on technical and industrial matters.</p>
+                    <p>4. To promote or oppose legislative or other measures affecting the Cutting Tool industry,
+                        make
+                        representations to Government, Government Departments, Quasi-governmental authorities,
+                        trade,
+                        commercial or industrial bodies or Associations, and/or officials of such
+                        authorities/entities,
+                        in
+                        respect of any matter pertaining to trade, commerce, manufacture in general and Cutting Tool
+                        industry in particular.</p>
+                    <p>5. To monitor, support, protect, extend and defend the rights and interest of the members and
+                        to
+                        procure for their benefit such advantages and concessions as may be necessary for their
+                        business.
+                    </p>
+                    <p>6. To institute, finance, encourage, develop and carry on all kinds of scientific and
+                        economic
+                        research relating to Cutting tools, including setting up training centres, providing
+                        scholarships
+                        and/or funding to technical, vocational and other colleges, universities and educational
+                        institutions.</p>
+                    <h1 class="h1-objects">B. OBJECTS INCIDENTAL OR ANCILLARY TO THE ATTAINMENT OF THE MAIN OBJECTS :
+                    </h1>
+                    <p>1. To purchase, take on lease, or hire or otherwise acquire any movable or immovable property
+                        or
+                        any
+                        rights or privileges necessary or convenient for the purpose of the Association.</p>
+                    <p>2. To open bank accounts, to draw, make, accept, discount, execute, and issue bills of
+                        exchange,
+                        promissory notes, bills of lading, warrants, debentures and other negotiable or transferable
+                        instruments or securities.</p>
+                    <p>3. To construct or alter or keep in repair any buildings required or used by or for the
+                        Association
+                        and to pull down or demolish any buildings not so required.</p>
+                    <p class="p-to-sell">4. To sell, improve, manage, develop, lease, mortgage, dispose of or otherwise
+                        deal with all
+                        or any part of the property of the Association. Page 1 of 6</p>
+                    <p>5. To charge, collect, recover and receive fees, surcharge and other sums of money from the
+                        members,
+                        for the services rendered.</p>
+                    <p>6. To accept any bequest, gift, donation or subscription for promoting any of the objects of
+                        the Association or the benefit of any staff or employee of the Association towards or to
+                        accumulate and provide a fund or an endowment and to invest the same and apply the income
+                        arising there
+                        from or to resort to the capital thereof for any of the objects of the Association.</p>
+                    <p>7. To subscribe to, become a member of or otherwise cooperate with any other association or
+                        entity,
+                        whether incorporated or not whose objects are altogether or in part similar to those of this
+                        Association and to procure from and to communicate to any such association or chamber such
+                        information as is likely to further the objects of the Association.</p>
+                    <p>8. To remunerate any person or company for services rendered or to be rendered in placing or
+                        assisting to place or guaranteeing placing of any debentures or other securities of the
+                        Association.</p>
+                    <p>9. To establish and support, or aid in the establishment and support of associations,
+                        institutions, funds, trusts and conveniences calculated to benefit employees of the Association
+                        or the dependents
+                        or connections of such persons, and grant pensions and allowances, and to make payments towards
+                        insurance and to subscribe or guarantee money for charitable or benevolent objects, or for any
+                        exhibition or for any public, general, useful object.</p>
+                    <p>10. To assign to any member or class of members any preferential, special or qualified rights
+                        or privileges over or as compared with any other members as regards voting or otherwise.</p>
+                    <p>11. To enter into any arrangement with any Government or authority, supreme, municipal, local
+                        or
+                        otherwise that may seem conducive to the Association's objects or any of them, and to obtain
+                        from
+                        any such Government or authority all rights, concessions and privileges which the
+                        Association
+                        may
+                        think it desirable to obtain and to carry out, exercise and comply with any such
+                        arrangements,
+                        right, privileges and concessions.</p>
+                    <p>12. To sell or dispose of the undertaking of the Association or any part thereof for such
+                        consideration as the Association may think fit and in particular for shares, debentures or
+                        securities of any other company having objects altogether or in part similar to those of
+                        this
+                        Association.</p>
+                    <p>13. To undertake and execute any trusts the undertaking of which may seem to the Association
+                        desirable and either gratuitously or otherwise.</p>
+                    <p>14. To collect and disseminate statistical and other information securing the promotion of
+                        the
+                        objects of the Association and to make efforts for the spread of commercial, technical,
+                        industrial
+                        and economic knowledge.</p>
+                    <p>15. To encourage, assist and extend knowledge and information connected with trade, commerce
+                        and
+                        industries whether by or through lectures, discussions, seminars, formation of libraries,
+                        publication of papers, periodicals, journals, catalogues, books, maps or any kind of general
+                        or
+                        special literature or foundation and endowment of professorship or scholarship or by
+                        encouraging
+                        research work or howsoever otherwise or organising exhibitions in India or abroad on behalf
+                        of
+                        the
+                        Association or in co-operation with others.</p>
+                    <p>16. To standardise the products of the members of the Association either in conformity with
+                        the
+                        Bureau of Indian Standards (BIS) and/or to provide, improve, regulate and maintain the
+                        highest
+                        technical standards in the products where there exists no BIS specification and also to
+                        issue
+                        certificates to that effect, to subscribe and co-operate with any Government Authorities,
+                        Central,
+                        State, Local, Municipal or otherwise or with any private bodies or institutions engaged in
+                        standardisation work and also to consider, originate and support improvements in the
+                        standards
+                        prevalent or new standards to be laid down and also to do all other necessary things so as
+                        to
+                        create
+                        quality consciousness in the Industry.</p>
+                    <p>17. To promote and develop exports of the products of the members and to render all the
+                        necessary
+                        services and guidance for that including organising exhibitions, trade-fairs in Indian and
+                        abroad
+                        and by participating in such exhibitions and trade-fairs.</p>
+                    <p>18. To carry on publicity and propaganda for the purpose of educating the public opinion with
+                        regard
+                        to the scope, importance and needs of the Association and its members.</p>
+                    <p>19. To start, organise and establish separate departments of the Association for the purpose
+                        of
+                        research work, or work connected with sale, purchase, distribution, import, export and for
+                        such
+                        other purposes as are specified in the objects of the Association.</p>
+                    <p>20. To sponsor, undertake, establish and execute any trusts, endowments and/or funds for the
+                        purpose
+                        of providing relief on occasions of national calamities like earthquakes, fire, tornados and
+                        floods
+                        or for other purposes which may seem to the Association desirable and which may be
+                        considered
+                        charitable.</p>
+                    <p>21. To provide legal, financial, secretarial or other assistance or service to other
+                        organisations
+                        of general public utility.</p>
+                    <p>22. To resolve controversies and disputes between members of the Association and to act as
+                        arbitrators or appoint arbitrators to act in the settlement of disputes arising out of the
+                        transactions between members inter se, or with non-Members. 23. To do all other lawful
+                        things as
+                        may
+                        be conducive or incidental for the preservation or extension of the trade, commerce and
+                        manufactures
+                        connected with the Cutting Tool Industry in particular and industry and trade in general and
+                        incidental to those objects and other objects set forth in this Memorandum of Association.
+                    </p>
+                    <p>I. The objects of the company extends throughout India</p>
+                    <p>II. [BENEFICIARY CLAUSE:]*</p>
+                    <p>1. The income and property of the Association where-so-ever derived shall be applied for the
+                        promotion of its objectives as set forth in this Memorandum of Association, and further [the
+                        benefits of the Association shall be open to all irrespective of caste, creed or religion]*.
+                        *amended/altered vide special resolution passed at the AGM dated 9 September 2014</p>
+                    <p>2. No portion of the income or property aforesaid shall be paid or transferred directly or
+                        indirectly by way of dividend, bonus or otherwise by way of profit to persons who at any
+                        time
+                        are or
+                        have been members of the Association or to any one or more of them or to any persons
+                        claiming
+                        through any one or more of them.</p>
+                    <p>3. Except with the previous approval of the Central Government (or such other authority
+                        appointed
+                        by
+                        law), no remuneration or other benefit in money or money's worth shall be given by the
+                        Association
+                        to any of its members whether officers or servants of the Association or not except payment
+                        of
+                        out-of-pocket expenses, reasonable and proper interest on money lent or reasonable or proper
+                        rent on
+                        premises let by any member to the Association</p>
+                    <p>4. Except with the previous approval of the Central Government (or such other authority
+                        appointed
+                        by
+                        law), no member shall be appointed to any office under the Association which is remunerated
+                        by
+                        salary, fee or in any other manner not excepted by sub-clause (b).</p>
+                    <p>5. Nothing in this clause shall prevent the payment by the Association in good faith of
+                        reasonable remuneration to any of its officers or a servants (not being members) in return for
+                        any
+                        services actually rendered to the Association.</p>
+                    <p>III. [AMENDMENT CLAUSE:]* Subject to provisions of the Act, no alterations shall be made to
+                        this Memorandum of Association or to the Articles of Association of the Company, which are for
+                        the time being in force unless the alteration has been previously submitted to and approved by
+                        the
+                        Registrar of Companies Karnataka. [No amendment to the Memorandum of Association shall be made
+                        which
+                        may prove to be repugnant to the provisions of Sections 2(15), 11,12 & 13 & 80G of the Income
+                        Tax Act,
+                        1961 as amended from time to time, and no Amendment shall be carried out without the prior
+                        approval
+                        of the Jurisdictional Commissioner of Income Tax.]* *amended/altered vide special resolution
+                        passedat
+                        the AGM dated 9 September 2014</p>
+                    <p>IV. The liability of the Members is limited.</p>
+                    <p>V. Each Member undertakes to contribute to the assets of the Association in the event of its
+                        being
+                        wound up while he is a member or within one year afterwards for payments of the debts or
+                        liabilities
+                        of the Association contracted before he ceases to be a member and of the costs, charges and
+                        expenses
+                        of winding up, and for adjustments of the rights of the contributors among themselves, such
+                        amounts
+                        as may be required not exceeding a sum of Rs. 5,000/-.</p>
+                    <p>VI. [a) ACCOUNTS CLAUSE: True account shall be kept of all sums of money received and
+                        expended by
+                        the Association and the matters in respect to which such receipt and expenditure take place
+                        and
+                        of
+                        the property, credits and liabilities of the Association; and subject to any reasonable
+                        restrictions
+                        as to the time and manner of in respect of the same that may be imposed in accordance with
+                        the
+                        regulations of the Company for the time being in force, the accounts shall be open to the
+                        inspection
+                        of the Members. The Accounts of the Association shall be examined and the correctness of the
+                        Balance
+                        Sheet and the Income and Expenditure Account be ascertained by one or more properly
+                        qualified
+                        auditor or auditors and such accounts shall be closed at 31st March every year. b)
+                        INVESTMENT
+                        CLAUSE: The funds of the Association shall be invested in the modes specified under the
+                        provision of
+                        Section 13(1)(d) read with section 11(5) of the Income Tax Act, 1961 as amended from time to
+                        time.]*
+                        *amended/altered vide special resolution passed at the AGM dated 9 September 2014</p>
+                    <p>VII. [DISSOLUTION CLAUSE]*: The Association shall not be dissolved except by the decision of
+                        the
+                        majority of three-fourths of the Members assembled at a general meeting. The quorum of this
+                        meeting
+                        shall be three-fourths of the total number of members of the roll at that time. If upon
+                        winding
+                        up
+                        or dissolution of the Association there remains after the satisfaction of all the debts and
+                        liabilities, any property whatsoever, the same shall not be distributed amongst the members
+                        of
+                        the
+                        Association but shall be given or transferred to [another Association having objects similar
+                        to
+                        the
+                        objects of this Association and which enjoys recognition under the Sections 12A and 80G of
+                        the
+                        Income Tax Act, 1961, as amended from time to time,]* at or before the time of dissolution
+                        or in
+                        default thereof by the High Court of Judicature that has or may acquire jurisdiction in the
+                        matter.
+                        *amended/altered vide special resolution passed at the AGM dated 9 September 2014 We, the
+                        several
+                        persons whose names, addresses, descriptions and occupations are hereunto subscribed are
+                        desirous of
+                        being formed into a Company not for profit, in pursuance of this Memorandum of Association:
+                    </p>
+                    <p>1.TOSHER GUSTI HORMUSJEE DIN No : 00401095 S/o. Gusti Marzban Hormusjee Director, G W
+                        Precision
+                        Tools India Pvt Ltd 41/42, Imperial Court, Cunningham Road, Bangalore - 560 052</p>
+                    <p>2.LAKSHMIKANTHAN KRISHNAN DIN No : 00316429 S/o. Lakshmikanthan Director, Taegutec India P
+                        Ltd
+                        M-48,
+                        Diamond District, Airport Road, Bangalore - 560 099</p>
+                    <p>3.RECAI KIPIK DIN No : 02148224 S/o. Yilmaz Kipik Director, Guhring India Private Limited
+                        C-066,
+                        Prestige Ozone, Tulip Close, Whitefield Main Road, Whitefield, Bangalore - 560 066</p>
+                    <p>4.SANTANOO MEDHI DIN No : 03066413 S/o. Bhabendra Lal Medhi Managing Director Kennametal
+                        India
+                        Ltd.
+                        Flat 6A, 6F Tower 5 Sausalito 1 Yuk Tai Str, Maonshan NT.Hongkong</p>
+                    <p>5.SAMEER AGHI DIN No : 02258926 S/o. Satish Aghi Director Cobra Carbide Pvt Ltd No.54,
+                        Bommasandra
+                        Jigani Link Road Industrial Area 2, Near Bus Stop, Bangalore - 560 099</p>
+                    <p>6.SESHAGIRIRAO RAVISHANKAR DIN No : 00861742 S/o. Seshgirirao Narayana Iyer Managing Director
+                        Komet
+                        Precision Tools India Pvt. Ltd No.309, 1 St Cross, Bharath Housing Society, Uttarahalli
+                        Road,
+                        Bangalore - 560 061</p>
+                    <p>7.CHUN SIK YOU DIN No : 02840819 S/o. Jae Dong You Managing Director YG Cutting Tools Pvt Ltd
+                        9
+                        Blue
+                        Cedar Drive, Streetly GB, United Kingdom</p>
+                    <p>The Subscribers have signed before me at Bangalore Sd/- Mr. JOHN JOSEPH NEREYETH S/o.
+                        N.J.Joseph
+                        2A,
+                        Haydon Manor, 12,Eagle Street, Langford Town, Bangalore - 560025 Chartered Accountant
+                        M.No:023921
+                        Dated this 22nd Day of DECEMBER 2011 at BANGALORE.</p>
+                </div>
+            </div>
+            <div class="gray-bottom">
+                <a href="#" class="btn-top">Move To Top</a>
+            </div>
+        </div>
+
+        <!-- address bar ends -->
+        <div class="navbar-bottom">
+            <p class=" pt-3">Copyright @ 2020. All Rights Reserved.</p>
+            <div class="nabar-bottom-icons">
+                <a href="#">
+                    <ion-icon name="logo-facebook" class="logo-facebook md hydrated" role="img"
+                        aria-label="logo facebook"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-twitter" class="logo-twitter md hydrated" role="img" aria-label="logo twitter">
+                    </ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-linkedin" class="logo-linkedin md hydrated" role="img"
+                        aria-label="logo linkedin"></ion-icon>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+</html>

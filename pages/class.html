@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classification</title>
+    <style>
+        .heading-backg {
+            background: url(../resources/website\ VS\ B2\ band.png);
+            margin-top: 106px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding: 10px 0px;
+
+        }
+
+        .heading-text {
+            color: white;
+            padding-left: 110px;
+
+            font-size: 25px;
+            margin-bottom: 0px;
+            line-height: normal;
+        }
+
+        .points-buttons {
+            width: 1140px;
+            padding-left: 110px;
+            background-color: #E6E8E3;
+
+            padding-top: 30px;
+            padding-bottom: 15px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 9%;
+        }
+
+
+        .backg-1 {
+            background-color: #D7D9D5;
+            padding-top: 0px;
+            margin-bottom: 0;
+        }
+
+        .class-points {
+            font-size: 17px;
+            color: #605D38;
+            padding-right: 25px;
+        }
+
+        .class-points:hover {
+
+            color: #605D38;
+
+        }
+
+        .jumbotron-fluid {
+
+            padding-bottom: 0;
+        }
+
+        /* .navbar-bottom {
+		
+		            margin-top: 34px;
+		        } */
+
+        .classification-img {
+            width: 1140px;
+            background-color: #E6E8E3;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+
+        }
+
+        .class-img {
+            width: 800px;
+
+        }
+
+        .eligiblity-img {
+            width: 1140px;
+            background-color: #E6E8E3;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        .elig-img {
+
+            width: 800px;
+
+        }
+
+        .toolset-img {
+            width: 1140px;
+            background-color: #E6E8E3;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+
+
+        }
+
+        .tool-img {
+
+            width: 1063px;
+
+        }
+
+        .white-line {
+            background-color: #fff;
+            height: 10px;
+            margin: 0;
+        }
+
+        .top-btn {
+            position: fixed;
+            bottom: 10%;
+            right: 30px;
+            color: #707c24;
+            font-size: 16px;
+        }
+
+        .top-btn:hover {
+            color: #666666;
+        }
+
+        /* meadia query  */
+        @media only screen and (max-width: 1601px) {
+            .points-buttons {
+
+                top: 14%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 fixed-top">
+            <a class="navbar-brand" href="../index.html">
+                <img class="main-logo" src="../resources/ictma_logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto  mt-lg-0  navbar-ul">
+                    <li class="nav-item active"> <a class="nav-link navbar-text-color" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown navbar-text-color">
+                            <a class="dropbtn ">About</a>
+                            <div class="dropdown-content">
+                                <a href="./our_mission.html">Our Mission</a>
+                                <a href="./president_message.html">President's Message</a>
+                                <a href="./members.html">Members</a>
+                                <a href="./office_bearers.html">Office Bearers</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item"> <a class="nav-link navbar-text-color" href="./article.html">Articles</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link navbar-text-color" href="./memorandum.html">Memorandum</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link navbar-text-color" href="#">Classifications</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link navbar-text-color"
+                            href="./memberships.html">Memberships</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link navbar-text-color" href="./survey.html">Survey</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link navbar-text-color border-0"
+                            href="./contact_us.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar ends -->
+        <!--heading start -->
+        <div class="heading-backg">
+            <p class="heading-text">CUTTING TOOL CLUSTER</p>
+        </div>
+        <!-- heading ends -->
+        <div class="jumbotron jumbotron-fluid backg-1 ">
+            <div class="points-buttons"> <a href="#classification" class="class-points">Classification of industries</a>
+                <a href="#eligiblity" class="class-points">Eligibility norms and guidlines </a>
+            </div>
+            <div class="classification-img" id="classification" style="scroll-margin-top: 130px;">
+                <img class="class-img" id="classificatoin" src="../resources/classification1.png">
+            </div>
+            <hr class="white-line">
+            <div class="eligiblity-img" id="eligiblity" style="scroll-margin-top: 105px;">
+                <img class="elig-img" src="../resources/classification2.png">
+            </div>
+            <div class="toolset-img">
+                <img class="tool-img" src="../resources/Tool vector.png">
+            </div>
+        </div> <a href="#top" style="border-bottom: none;" class="top-btn">Move To Top</a>
+        <div class="navbar-bottom">
+            <p class=" pt-3">Copyright @ 2020. All Rights Reserved.</p>
+
+            <div class="nabar-bottom-icons">
+                <a href="#">
+                    <ion-icon name="logo-facebook" class="logo-facebook md hydrated" role="img"
+                        aria-label="logo facebook"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-twitter" class="logo-twitter md hydrated" role="img" aria-label="logo twitter">
+                    </ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-linkedin" class="logo-linkedin md hydrated" role="img"
+                        aria-label="logo linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+</html>
